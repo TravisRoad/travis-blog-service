@@ -13,7 +13,7 @@ ENV MODE="PROD"
 ENV PORT="8080"
 WORKDIR /app
 COPY --from=base /go/build/exe /
-COPY --from=base /go/build/config.prod.yaml /
+COPY --from=base /go/build/config.prod.yaml /app
 EXPOSE 8080
 CMD /exe
 
